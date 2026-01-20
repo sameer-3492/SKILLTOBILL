@@ -5,6 +5,18 @@
       "headers": [
         { "key": "Content-Type", "value": "text/css" }
       ]
+    },
+    {
+      "source": "**/*.js",
+      "headers": [
+        { "key": "Content-Type", "value": "application/javascript" }
+      ]
+    },
+    {
+      "source": "**/*.ico",
+      "headers": [
+        { "key": "Content-Type", "value": "image/x-icon" }
+      ]
     }
   ]
 }
