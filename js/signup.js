@@ -32,11 +32,11 @@ document.getElementById('signupRole').addEventListener('change', (e) => {
     console.log('categorySelect element:', categorySelect);
     console.log('Role changed to', e.target.value);
     if (e.target.value === 'earner') {
-        categorySelect.style.display = 'block';
-        console.log('Set display block, current:', categorySelect.style.display);
+        categorySelect.classList.add('show');
+        console.log('Added show class, current classes:', categorySelect.className);
     } else {
-        categorySelect.style.display = 'none';
-        console.log('Set display none, current:', categorySelect.style.display);
+        categorySelect.classList.remove('show');
+        console.log('Removed show class, current classes:', categorySelect.className);
     }
 });
 
