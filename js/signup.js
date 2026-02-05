@@ -33,9 +33,11 @@ document.getElementById('signupRole').addEventListener('change', (e) => {
     console.log('Role changed to', e.target.value);
     if (e.target.value === 'earner') {
         categorySelect.classList.add('show');
+        categorySelect.required = true;
         console.log('Added show class, current classes:', categorySelect.className);
     } else {
         categorySelect.classList.remove('show');
+        categorySelect.required = false;
         console.log('Removed show class, current classes:', categorySelect.className);
     }
 });
